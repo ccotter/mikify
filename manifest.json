@@ -8,7 +8,7 @@
   "content_scripts": [
     {
       "matches": ["http://app.strava.com/activities/*"],
-      "js": ["jquery.js", "strava.js"],
+      "js": ["jquery.js", "live/jquery.livequery.js", "strava.js"],
       "run_at": "document_end"
     }
   ],

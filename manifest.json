@@ -11,13 +11,5 @@
       "js": ["jquery.js", "live/jquery.livequery.js", "strava.js"],
       "run_at": "document_end"
     }
-  ],
-
-  "browser_action": {
-    "default_icon": "icon.jpg",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "https://secure.flickr.com/"
   ]
 }

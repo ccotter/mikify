@@ -9,11 +9,10 @@ var Mike =
 
 $ = jQuery;
 
-var others = $(".details > a");
-var n = parseInt(others.get()[0].innerHTML.split(" ")[0]);
-others.get()[0].innerHTML = (n+10)  + " others";
+var others = $("#and-more");
+var n = parseInt(others[0].innerHTML.split(" ")[0]);
+others[0].innerHTML = (n+10)  + " others";
 
-//$("body").bind("DOMNodeInserted", function() {
 others.bind("click", function() {
     var node = $("body div.ui-dialog ul")[0];
     console.log(node.innerHTML);

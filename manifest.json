@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Mike Bikes-Alot",
+  "description": "How many times do you want Mike to be on your ride?",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://app.strava.com/activities/*"],
+      "js": ["jquery.js", "strava.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.jpg",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://secure.flickr.com/"
+  ]
+}
